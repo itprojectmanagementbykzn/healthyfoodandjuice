@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
+import '../../../../../main.dart';
+
 class AnimatedAppBarWidget extends StatelessWidget {
   final String name;
   final Duration appBarPlayTime;
@@ -31,7 +33,7 @@ class AnimatedAppBarWidget extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .bodyLarge!
-              .copyWith(color: Colors.white),
+              .copyWith(color: kPrimaryColor),
         ),
         IconButton(
             onPressed: () {},

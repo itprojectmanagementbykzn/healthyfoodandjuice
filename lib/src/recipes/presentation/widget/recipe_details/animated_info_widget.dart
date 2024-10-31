@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:dribbble_challenge/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -22,7 +23,7 @@ class AnimatedInfoWidget extends StatelessWidget {
       height: constraints.maxHeight * 0.1,
       margin: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.white30, width: 1.3),
+          border: Border.all(color: kPrimaryColor, width: 1.3),
           borderRadius: BorderRadius.circular(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -13,9 +13,9 @@ class AnimatedNameWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Hello, \nWorld 👋 ",
+      "Hello  👋 \nHow are you Today ? ",
       maxLines: 2,
-      style: Theme.of(context).textTheme.headlineMedium,
+      style: Theme.of(context).textTheme.headlineSmall,
     )
         .animate()
         .slideX(

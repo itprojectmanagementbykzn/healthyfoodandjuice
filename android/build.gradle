@@ -1,29 +1,29 @@
+// Root-level build.gradle file
 buildscript {
-    ext.kotlin_version = '1.7.10'
     repositories {
-        google()
-        mavenCentral()
+        google()        // Google's Maven repository
+        mavenCentral()  // Maven Central repository
     }
-
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Add classpath dependencies for the build system here
+        classpath 'com.android.tools.build:gradle:8.6.1' // Gradle plugin for Android
+        classpath 'com.google.gms:google-services:4.3.15' // Google services for Firebase
     }
 }
 
 allprojects {
     repositories {
-        google()
-        mavenCentral()
+        google()        // Google's Maven repository
+        mavenCentral()  // Maven Central repository
     }
 }
 
-rootProject.buildDir = '../build'
+rootProject.buildDir = "../build"
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
 subprojects {
-    project.evaluationDependsOn(':app')
+    project.evaluationDependsOn(":app")
 }
 
 tasks.register("clean", Delete) {
